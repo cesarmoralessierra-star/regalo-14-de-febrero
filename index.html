@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Para mi pequeña cocoro 💖</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: radial-gradient(circle at top, #ff5f9e, #6a0572);
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    .container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+
+    h1 { font-size: 3.2rem; }
+    h2 { font-weight: normal; margin-bottom: 20px; }
+
+    p { font-size: 1.2rem; max-width: 750px; line-height: 1.7; }
+
+    button {
+      background: #fff;
+      color: #ff2e63;
+      border: none;
+      padding: 14px 26px;
+      font-size: 1.05rem;
+      border-radius: 30px;
+      cursor: pointer;
+      margin: 10px;
+    }
+
+    button:hover { transform: scale(1.08); }
+
+    .hidden { display: none; }
+
+    .card {
+      background: rgba(255,255,255,0.15);
+      border-radius: 20px;
+      padding: 25px;
+      margin-top: 25px;
+      max-width: 800px;
+    }
+
+    .gallery img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin: 10px;
+    }
+
+    .heart { font-size: 5rem; animation: latido 1s infinite; }
+
+    @keyframes latido {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.25); }
+      100% { transform: scale(1); }
+    }
+
+    .corazon-flotante {
+      position: fixed;
+      bottom: -10px;
+      font-size: 1.5rem;
+      animation: flotar 6s linear infinite;
+      opacity: 0.7;
+    }
+
+    @keyframes flotar {
+      0% { transform: translateY(0); opacity: 0; }
+      10% { opacity: 1; }
+      100% { transform: translateY(-110vh); opacity: 0; }
+    }
+
+    /* --- SLIDES (diapositivas) --- */
+    .slide {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: radial-gradient(circle at top, #ff5f9e, #6a0572);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      z-index: 10;
+      animation: slideIn 0.6s ease;
+    } 
+    .slide.hidden {
+  display: none;
+}
+
+
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    .cerrar {
+      position: absolute;
+      top: 20px;
+      right: 25px;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+    #modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#modal.hidden {
+  display: none !important;
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Feliz 14 de Febrero, mi amor 💕</h1>
+    <h2>Todo esto existe porque tú existes <br>
+           Y jamas cambiaria nada mi amor</h2>
+    <div class="heart">❤️</div>
+
+   <button onclick="abrirProtegido('carta')">💌 Leer mi carta</button>
+<button onclick="abrirProtegido('poema')">📜 Mi poema para ti</button>
+<button onclick="abrirProtegido('fotos')">📸 Nuestros Recuerdos</button>
+<button onclick="abrirProtegido('video')">🎥 Un video que te hice</button>
+
+
+    <!-- CARTA -->
+    <div id="carta" class="slide hidden">
+  <span class="cerrar" onclick="cerrar('carta')">✖</span>
+  <div class="card">
+    <br>
+<button onclick="cerrar('carta')">⬅ Volver</button>
+
+
+      <p>
+        Hola mi amor, tu sabes que este es nuestro primer san valentin juntos <br>
+         y quiero que sepas que quiero pasar a tu lado todos los demas por el <br>
+         resto de mi vida, eres y siempre serás lo más valioso para mi y quiero <br>
+         que sepas que siempre te elegire a ti, espero que nuestro libro nunca tenga fin <br>
+         por que el resto de mis dias los quiero pasar junto a ti, eres mi luz, mi amor y <br>
+         todo lo bueno, mi lugar seguro, en donde en tus brazos me puedo refugiar, te amo, <br>
+         te amo en verdad mi amor y espero que en este día tan especial puedas comprender <br>
+         lo mucho que te quiero amar. Te ama con todo su corazon tu niño bueno.
+      </p>
+    </div>
+</div>
+
+    <!-- POEMA -->  
+    <div id="poema" class="slide hidden">
+  <span class="cerrar" onclick="cerrar('poema')">✖</span>
+  <div class="card">
+    <br>
+<button onclick="cerrar('poema')">⬅ Volver</button>
+
+
+      <p>
+        Hola mi amor, tu sabes que este es nuestro primer san valentin juntos <br>
+         y quiero que sepas que quiero pasar a tu lado todos los demas por el <br>
+         resto de mi vida, eres y siempre serás lo más valioso para mi y quiero <br>
+         que sepas que siempre te elegire a ti, espero que nuestro libro nunca tenga fin <br>
+         por que el resto de mis dias los quiero pasar junto a ti, eres mi luz, mi amor y <br>
+         todo lo bueno, mi lugar seguro, en donde en tus brazos me puedo refugiar, te amo, <br>
+         te amo en verdad mi amor y espero que en este día tan especial puedas comprender <br>
+         lo mucho que te quiero amar. Te ama con todo su corazon tu niño bueno.
+      </p>
+    </div>
+</div>
+    <!-- FOTOS -->
+   <div id="fotos" class="slide hidden">
+  <span class="cerrar" onclick="cerrar('fotos')">✖</span>
+  <div class="card">
+    <br>
+<button onclick="cerrar('fotos')">⬅ Volver</button>
+
+
+      <div class="gallery">
+        <img src="foto1.jpg" alt="Nosotros 1">
+        <img src="foto2.jpg" alt="Nosotros 2">
+        <img src="foto3.jpg" alt="Nosotros 3">
+        <img src="foto4.jpg" alt="Nosotros 4">
+        <img src="foto5.jpg" alt="Nosotros 5">
+        <img src="foto6.jpg" alt="Nosotros 6">
+      </div>
+      <p>Aquí están algunas de mis nuestras fotos favoritas 📸💖</p>
+    </div>
+  </div>
+
+  <!-- VIDEO -->
+<div id="video" class="slide hidden">
+  <span class="cerrar" onclick="cerrar('video')">✖</span>
+  <div class="card">
+    <br>
+<button onclick="cerrar('video')">⬅ Volver</button>
+
+  <p>Un pequeño video con muchos recuerdos 💖</p>
+  <video width="100%" controls style="border-radius:15px; max-width:700px;">
+    <source src="recuerdos.mp4" type="video/mp4">
+    Tu navegador no soporta video.
+  </video>
+  </div>
+</div>
+
+<!-- MODAL CONTRASEÑA -->
+<div id="modal" class="hidden" style="
+position:fixed;
+top:0; left:0;
+width:100%; height:100%;
+background:rgba(0,0,0,0.7);">
+
+  <div class="card">
+    <p>💖 Ingresa la contraseña</p>
+    <input id="passwordInput" type="password"
+      style="padding:10px; border-radius:10px; border:none;">
+    <br><br>
+    <button onclick="verificar()">Entrar</button>
+  </div>
+</div>
+
+  <script>
+  let objetivo = '';
+  const CONTRASENA = 'cocoro'; // CAMBIA AQUÍ LA CONTRASEÑA
+  function abrirProtegido(id) {
+    objetivo = id;
+    document.getElementById('modal').classList.remove('hidden');
+  }
+
+ function verificar() {
+  const valor = document.getElementById('passwordInput').value;
+
+  if (valor === CONTRASENA) {
+    document.getElementById('modal').classList.add('hidden');
+
+    // Cierra todas las slides primero
+    document.querySelectorAll('.slide')
+      .forEach(s => s.classList.add('hidden'));
+
+    // Abre solo la que corresponde
+    document.getElementById(objetivo).classList.remove('hidden');
+
+    document.getElementById('passwordInput').value = '';
+  } else {
+    alert('Contraseña incorrecta 😳');
+  }
+}
+
+function cerrar(id) {
+  document.getElementById(id).classList.add('hidden');
+
+  // regresar al inicio
+  document.querySelector('.container')
+    .scrollIntoView({ behavior: 'smooth' });
+}
+
+
+  function crearCorazon() {
+    const corazon = document.createElement('div');
+    corazon.classList.add('corazon-flotante');
+    corazon.innerText = '💖';
+    corazon.style.left = Math.random() * 100 + 'vw';
+    corazon.style.animationDuration = (Math.random() * 3 + 4) + 's';
+    document.body.appendChild(corazon);
+    setTimeout(() => corazon.remove(), 7000);
+  }
+
+  setInterval(crearCorazon, 500);
+  
+</script>
+
+</body>
+</html>
