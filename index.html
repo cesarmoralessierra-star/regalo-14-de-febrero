@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Para mi pequeña cocoro 💖</title>
   <style>
     body {
@@ -12,6 +13,9 @@
       text-align: center;
       overflow-x: hidden;
     }
+.poema-texto {
+  white-space: pre-line;
+}
 
     .container {
       min-height: 100vh;
@@ -48,6 +52,8 @@
       padding: 25px;
       margin-top: 25px;
       max-width: 800px;
+       max-height: 90vh;
+  overflow-y: auto;
     }
 
     .gallery img {
@@ -94,6 +100,8 @@
       padding: 40px;
       z-index: 10;
       animation: slideIn 0.6s ease;
+      overflow-y: auto;
+box-sizing: border-box;
     } 
     .slide.hidden {
   display: none;
@@ -126,6 +134,40 @@
 }
 #modal.hidden {
   display: none !important;
+}
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .card {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+.slide {
+  padding: 20px;
+  align-items: flex-start;
+}
+
 }
 
 
@@ -173,98 +215,98 @@
 <button onclick="cerrar('poema')">⬅ Volver</button>
 
 
-      <p>
-        
-        Ya es San Valentín,<br>
-y sabes que mi corazón solo te lo entrego a ti.<br>
-Mi razón de vivir comenzó<br>
-cuando descubrí tu existir.<br>
+      <p class="poema-texto">
 
-Mis días nocturnos se volvieron diurnos,<br>
-y siempre me pregunto cómo es que se pudo.<br>
-Ese “cómo” tiene una respuesta:<br>
-fueron tus abrazos que quitaron toda tormenta.<br>
+         Ya es San Valentín,
+y sabes que mi corazón solo te lo entrego a ti.
+Mi razón de vivir comenzó
+cuando descubrí tu existir.
 
-Me sacaste de un pozo de oscuridad<br>
-y me envolviste en luz.<br>
-Ya no hubo más soledad,<br>
-porque a mi lado siempre te quedaste tú.<br>
+Mis días nocturnos se volvieron diurnos,
+y siempre me pregunto cómo es que se pudo.
+Ese “cómo” tiene una respuesta:
+fueron tus abrazos que quitaron toda tormenta.
 
-Un poema de amor te quiero escribir,<br>
-pues gracias a ti me he vuelto feliz.<br>
-Me has llenado de amor,<br>
-y en tus brazos busco refugio.<br>
+Me sacaste de un pozo de oscuridad
+y me envolviste en luz.
+Ya no hubo más soledad,
+porque a mi lado siempre te quedaste tú.
 
-Aunque a mi lado todo se encuentre mal,<br>
-me abrazas para calmar todo malestar.<br>
-Me susurras que todo va a pasar<br>
-y confianza para que las cosas estén bien me das.<br>
+Un poema de amor te quiero escribir,
+pues gracias a ti me he vuelto feliz.
+Me has llenado de amor,
+y en tus brazos busco refugio.
 
-Eres el amor de mi vida, de eso no hay duda.<br>
-Cuando me preguntan por ti siempre me notan feliz.<br>
-¿Y cómo no notarme feliz<br>
-si la razón de tanta felicidad eres tú?<br>
+Aunque a mi lado todo se encuentre mal,
+me abrazas para calmar todo malestar.
+Me susurras que todo va a pasar
+y confianza para que las cosas estén bien me das.
 
-Cuando ya no veo la maldad<br>
- porque tú eres mi luz.<br>
-Te entrego todo mi corazón con tal de que seas feliz,<br>
-y aunque cometo un error, siempre estás ahí.<br>
+Eres el amor de mi vida, de eso no hay duda.
+Cuando me preguntan por ti siempre me notan feliz.
+¿Y cómo no notarme feliz
+si la razón de tanta felicidad eres tú?
 
-Te amo con todo mi corazón, amor mío.<br>
-No hay día que no vivas dentro mío.<br>
-En mi cabeza y en mi corazón<br>
-tus recuerdos resuenan junto con tu voz.<br>
+Cuando ya no veo la maldad
+ porque tú eres mi luz.
+Te entrego todo mi corazón con tal de que seas feliz,
+y aunque cometo un error, siempre estás ahí.
 
-Aunque a veces dudes de mí,<br>
-las palabras que te digo las menciono con certeza,<br>
-porque no podría mentirle<br>
-a mi princesa y mi tesoro.<br>
+Te amo con todo mi corazón, amor mío.
+No hay día que no vivas dentro mío.
+En mi cabeza y en mi corazón
+tus recuerdos resuenan junto con tu voz.
 
-No busco a nadie ni lo voy a intentar,<br>
-porque contigo lo tengo todo<br>
-y no quiero a nadie más.<br>
-Eres mi preciado tesoro y con quien quiero estar.<br>
+Aunque a veces dudes de mí,
+las palabras que te digo las menciono con certeza,
+porque no podría mentirle
+a mi princesa y mi tesoro.
 
-Problemas puede haber, problemas siempre hay,<br>
-pero una solución siempre podremos encontrar.<br>
-Sé que no soy perfecto,<br>
-puede que tampoco el hombre de tus sueños.<br>
+No busco a nadie ni lo voy a intentar,
+porque contigo lo tengo todo
+y no quiero a nadie más.
+Eres mi preciado tesoro y con quien quiero estar.
 
-Lo único que ofrezco<br>
-es un corazón dispuesto y un amor sincero.<br>
-Podré ser tu príncipe y tú mi princesa,<br>
-aunque no seamos de la realeza.<br>
+Problemas puede haber, problemas siempre hay,
+pero una solución siempre podremos encontrar.
+Sé que no soy perfecto,
+puede que tampoco el hombre de tus sueños.
 
-Podría verte sonreír durante toda mi vida,<br>
-y hasta en mi último día<br>
-recordaría esa sonrisa.<br>
-Eres todo para mí, lo digo en verdad.<br>
+Lo único que ofrezco
+es un corazón dispuesto y un amor sincero.
+Podré ser tu príncipe y tú mi princesa,
+aunque no seamos de la realeza.
 
-En este poema encuentras<br>
-una partitura de mi corazón.<br>
-Quizá no soy el mejor compositor,<br>
-ni escritor, ni alguien con grandes ingresos.<br>
+Podría verte sonreír durante toda mi vida,
+y hasta en mi último día
+recordaría esa sonrisa.
+Eres todo para mí, lo digo en verdad.
 
-Pero lo que sí soy<br>
-es un hombre enamorado,<br>
-dispuesto a esforzarse como nunca te has imaginado.<br>
-Dispuesto a amar con un amor incondicional.<br>
+En este poema encuentras
+una partitura de mi corazón.
+Quizá no soy el mejor compositor,
+ni escritor, ni alguien con grandes ingresos.
 
-Lo que no puedo darte ahora,<br>
-me esforzaré por dártelo en el futuro.<br>
-Porque mientras tú seas feliz,<br>
-no me hará falta nada para mí.<br>
+Pero lo que sí soy
+es un hombre enamorado,
+dispuesto a esforzarse como nunca te has imaginado.
+Dispuesto a amar con un amor incondicional.
 
-Tu sonrisa me alivia como una suave brisa,<br>
-y no te imaginas lo hermoso que es tenerte en mi vida.<br>
-Cuando no te sientas especial,<br>
-recuerda que para mí lo eres todo.<br>
+Lo que no puedo darte ahora,
+me esforzaré por dártelo en el futuro.
+Porque mientras tú seas feliz,
+no me hará falta nada para mí.
 
-Porque no hay nadie ni habrá alguien como tú.<br>
-De quien me enamoré… ya sabes que eres tú.<br>
-Feliz San Valentín, por fin te digo,<br>
-porque tu niño bueno siempre se quedará contigo.<br>
-      </p>
+Tu sonrisa me alivia como una suave brisa,
+y no te imaginas lo hermoso que es tenerte en mi vida.
+Cuando no te sientas especial,
+recuerda que para mí lo eres todo.
+
+Porque no hay nadie ni habrá alguien como tú.
+De quien me enamoré… ya sabes que eres tú.
+Feliz San Valentín, por fin te digo,
+porque tu niño bueno siempre se quedará contigo.
+      <p class="poema-texto">  
     </div>
 </div>
     <!-- FOTOS -->
